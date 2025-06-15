@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 🚀 Post Pilot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Post Pilot** is a sleek, modern post management web app built with **React**, **TypeScript**, and **Material UI**. It provides a simple interface to create, manage, and organize posts for your social platforms or content strategy.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Visit Post Pilot Live](https://post-pilot-app.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (with Hooks & Functional Components)
+- **TypeScript**
+- **Material UI (MUI)**
+- **Vite / CRA** (depending on what you used)
+- **Deployed on Vercel**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🎨 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ✅ Create, edit, and delete posts  
+- 📅 Schedule posts  
+- 🌙 Light/Dark Mode using MUI themes  
+- 📱 Fully responsive  
+- 🧼 Clean component-based architecture  
+- 📦 Easily extendable
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Prerequisites
+- Node.js ≥ 16.x
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/Divyanshuddev/post_pilot_app.git
+cd post_pilot_app
+npm install
+npm run dev  # or npm start depending on setup
